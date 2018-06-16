@@ -1,0 +1,109 @@
+{
+  "id": "8c700b30-9775-4639-9d1e-b13027888cfc",
+  "name": "greetings",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "no mention",
+            "glad to help",
+            "welcome!!",
+            "anytime",
+            "happy that i could help"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528721840,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "1a4aeb37-2bd3-4007-8e41-bd072e80ab0c",
+      "data": [
+        {
+          "text": "thanks "
+        },
+        {
+          "text": "for the",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " help"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528721812,
+      "isAuto": false
+    },
+    {
+      "id": "e2db6990-df4d-4133-939c-9454583c4368",
+      "data": [
+        {
+          "text": "tysm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528721812,
+      "isAuto": false
+    },
+    {
+      "id": "1091ac04-a8eb-4946-a5dd-8fce328165db",
+      "data": [
+        {
+          "text": "ty"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528721812,
+      "isAuto": false
+    },
+    {
+      "id": "0826c939-f503-45fe-ad1c-7fcc95facbf8",
+      "data": [
+        {
+          "text": "thanks"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528721812,
+      "isAuto": false
+    },
+    {
+      "id": "5e371396-d1f3-4bac-8f7f-c0b390f0a693",
+      "data": [
+        {
+          "text": "thank you"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528721812,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}

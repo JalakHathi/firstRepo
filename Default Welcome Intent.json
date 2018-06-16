@@ -1,0 +1,103 @@
+{
+  "id": "b31c6c9c-5a3b-4b89-9a96-3f5024b9ee81",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Hi!",
+            "Hello!",
+            "Good day!",
+            "Greetings!",
+            "hey there! i am at your service.",
+            "hello. good to see you"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528722153,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "userSays": [
+    {
+      "id": "7d741c6a-e184-4476-a5bc-d32f01b55c59",
+      "data": [
+        {
+          "text": "hola"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528722153,
+      "isAuto": false
+    },
+    {
+      "id": "e5b9b90b-f682-43f3-9e46-4ac4df830161",
+      "data": [
+        {
+          "text": "hey there"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528722153,
+      "isAuto": false
+    },
+    {
+      "id": "5e7d448d-2606-46f4-8e38-ea91cecd0d7b",
+      "data": [
+        {
+          "text": "hello"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528722153,
+      "isAuto": false
+    },
+    {
+      "id": "47251264-116b-4304-9aaa-93e26a6b081e",
+      "data": [
+        {
+          "text": "heyy"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528722153,
+      "isAuto": false
+    },
+    {
+      "id": "335c0088-eb5a-4283-9586-ceedb644e8d7",
+      "data": [
+        {
+          "text": "hii"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1528722153,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}

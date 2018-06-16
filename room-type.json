@@ -1,0 +1,33 @@
+{
+  "id": "6f437e67-f4f8-4019-b285-9ea725b65752",
+  "name": "room-type",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "delux",
+      "synonyms": [
+        "luxury",
+        "delux"
+      ]
+    },
+    {
+      "value": "economy",
+      "synonyms": [
+        "economy",
+        "low cost",
+        "standard"
+      ]
+    },
+    {
+      "value": "VIP",
+      "synonyms": [
+        "VIP",
+        "hi-fi",
+        "high cost",
+        "costly"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

@@ -1,0 +1,307 @@
+{
+  "id": "890aeaac-b93c-4d37-a3a5-d9577a524b81",
+  "name": "hotelbooking",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "invoke_fulfillment",
+      "affectedContexts": [
+        {
+          "name": "hotelbooking-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "9e692261-9c96-4ca4-96de-92ddda03b6ea",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            "your name please",
+            "what is your good name",
+            "may i know your good name"
+          ],
+          "isList": false
+        },
+        {
+          "id": "e6b5332c-d071-4033-9b12-9e9a34f0b994",
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "name": "persons",
+          "value": "$persons",
+          "prompts": [
+            "may i know for how many number of people do you need room",
+            "tell me the number of people",
+            "for how many people?"
+          ],
+          "isList": false
+        },
+        {
+          "id": "d2964992-5a87-49a3-a8f3-a1656867e332",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "isList": false
+        },
+        {
+          "id": "d2c26a5f-1a33-4060-a232-4f246d915e73",
+          "required": true,
+          "dataType": "@room-type",
+          "name": "room-type",
+          "value": "$room-type",
+          "prompts": [
+            "which type of room would you like to book. We have standard, delux and hi-fi rooms"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "something went wrong"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1529122589,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "94ef10da-b7e7-4f6c-8a33-59ac7b4b8e55",
+      "data": [
+        {
+          "text": "i need a room"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "ff13b075-85ce-43e6-9e7f-68963c67bb88",
+      "data": [
+        {
+          "text": "can i have a "
+        },
+        {
+          "text": "luxury",
+          "alias": "room-type",
+          "meta": "@room-type",
+          "userDefined": true
+        },
+        {
+          "text": " room"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "5eb0ba07-7e2e-4c9e-8d33-7ddc84752068",
+      "data": [
+        {
+          "text": "i want to book an "
+        },
+        {
+          "text": "economy",
+          "alias": "room-type",
+          "meta": "@room-type",
+          "userDefined": true
+        },
+        {
+          "text": " room"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "ea9bdf12-9c2c-4f56-a17c-52934e2e69b6",
+      "data": [
+        {
+          "text": "ross",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " here"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "ed7fa233-0035-43b6-b6d4-a77903e5fad0",
+      "data": [
+        {
+          "text": "ross",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "f97a8710-834c-4cc3-9d3f-2e94cccdec2b",
+      "data": [
+        {
+          "text": "i am "
+        },
+        {
+          "text": "ross",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "da6ca188-afdd-43c5-8f55-1ad85b661863",
+      "data": [
+        {
+          "text": "my name is "
+        },
+        {
+          "text": "ross",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "a5253719-6f89-4cfa-957d-433bb6b591a5",
+      "data": [
+        {
+          "text": "my email is "
+        },
+        {
+          "text": "abc@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "aae868da-4530-415d-bafd-e50594ebf583",
+      "data": [
+        {
+          "text": "book a hotel for a group of "
+        },
+        {
+          "text": "20",
+          "alias": "persons",
+          "meta": "@sys.number-integer",
+          "userDefined": false
+        },
+        {
+          "text": " people"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "1a640ba9-32c0-410c-b503-5a88d6fa6b1a",
+      "data": [
+        {
+          "text": "wanna book a room for "
+        },
+        {
+          "text": "3",
+          "alias": "persons",
+          "meta": "@sys.number-integer",
+          "userDefined": false
+        },
+        {
+          "text": " people"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "58928596-5020-4ab9-8167-0673916d22f0",
+      "data": [
+        {
+          "text": "can you please book a room for me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "66d82de0-6a5a-4ac1-b19b-df012a792a3e",
+      "data": [
+        {
+          "text": "i want a room"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    },
+    {
+      "id": "51b0b5a4-b414-471d-b6e9-93da389ecc1c",
+      "data": [
+        {
+          "text": "i wanna book a room"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529037667,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}
